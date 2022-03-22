@@ -25,7 +25,7 @@ class Auto:
         self.marca=marca
         self.motor=motor
         self.regitro=registro
-        self.cantidadCreados=cantidadCreados
+        self.Auto=cantidadCreados
 
     #@classmethod
     def cantidadAsientos(self):
