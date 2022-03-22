@@ -21,9 +21,13 @@ class Auto:
     def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
+        self.asientos=asientos
         Asiento.asientos=asientos
         self.marca=marca
+
+        self.motor=motor
         Motor.motor=motor
+
         self.regitro=registro
         #Auto.cantidadCreados=cantidadCreados
 
@@ -44,10 +48,9 @@ class Auto:
                 lista.append(i)
         
         for e in lista:
-            if (self.asientos[lista[0]]!=self.asientos[e]):
+            if (self.asientos[lista[0]].registro!=self.asientos[e].registro):
                 return "Las piezas no son originales"
-            
-        if ((self.asientos)[lista[0]]).registro==self.regitro and self.regitro== self.motor.registro and self.motor.registro== ((self.asientos)[lista[0]]).registro :
+        if((self.asientos)[lista[0]]).registro==self.regitro and self.regitro== (self.motor).registro and (self.motor).registro== ((self.asientos)[lista[0]]).registro :
             return "Auto original"
         
         return "Las piezas no son originales"
@@ -68,10 +71,6 @@ class Motor:
             self.tipo="gasolina"
 
 
-"""if __name__=="__main__":
-    #a=Auto
-    a = Auto("model 3", 33000, list(),"tesla", Motor(4, "electrico", 142), 341)
-    a.asientos = [Asiento("blanco", 5000, 435),None, None, Asiento("blanco", 5000, 435), None]
 
-    print(a.cantidadAsientos())"""
+
         
