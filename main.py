@@ -29,7 +29,12 @@ class Auto:
 
     #@classmethod
     def cantidadAsientos(self):
-        return 2
+        contador=0
+        for i in range(len(self.asientos)):
+            if self.asientos[i]!=None:
+                contador+=1
+
+        return contador
 
 
         
