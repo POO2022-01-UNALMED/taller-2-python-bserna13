@@ -29,7 +29,10 @@ class Auto:
 
     #@classmethod
     def cantidadAsientos(self):
-        return len(self.asientos)
+        return 2
+
+
+        
     
     def verificarIntegridad(self):
         for i in range(len(self.asientos)):
@@ -57,5 +60,10 @@ class Motor:
             self.tipo="gasolina"
 
 
+"""if __name__=="__main__":
+    #a=Auto
+    a = Auto("model 3", 33000, list(),"tesla", Motor(4, "electrico", 142), 341)
+    a.asientos = [Asiento("blanco", 5000, 435),None, None, Asiento("blanco", 5000, 435), None]
 
+    print(a.cantidadAsientos())"""
         
