@@ -21,7 +21,6 @@ class Auto:
     def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
-        self.asientos=asientos
         Asiento.asientos=asientos
         self.marca=marca
 
@@ -29,9 +28,7 @@ class Auto:
         Motor.motor=motor
 
         self.regitro=registro
-        #Auto.cantidadCreados=cantidadCreados
-
-    #@classmethod
+ 
     def cantidadAsientos(self):
         contador=0
         for i in range(len(self.asientos)):
@@ -69,8 +66,5 @@ class Motor:
             self.tipo="electrico"
         elif tip=="gasolina":
             self.tipo="gasolina"
-
-
-
 
         
