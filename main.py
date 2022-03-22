@@ -17,8 +17,7 @@ class Asiento:
             self.color="blanco"
         
 class Auto:
-    cantidadCreados=0.0
-
+    
     def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
@@ -26,7 +25,6 @@ class Auto:
         self.marca=marca
         self.motor=motor
         self.regitro=registro
-        #self.Auto=cantidadCreados
 
     #@classmethod
     def cantidadAsientos(self):
